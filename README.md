@@ -30,6 +30,7 @@ The following tools are also required:
 * bcg729 [G.729A codec library](http://www.linphone.org/technical-corner/bcg729/overview)
 * Speex and SpeexDSP [Speex codec library](http://www.speex.org/)
 * iLBC [iLBC codec library](http://www.ilbcfreeware.org/)
+* [Akonadi](https://community.kde.org/KDE_PIM/Akonadi) (specifically, the `core` library) and [KContacts](https://cgit.kde.org/kcontacts.git)
 
 ## Build
 
@@ -45,6 +46,7 @@ All possible options are:
 * Speex codec support: `-DWITH_SPEEX=On`
 * iLBC codec support: `-DWITH_ILBC=On`
 * Diamondcard support: `-DWITH_DIAMONDCARD=On` (currently broken)
+* Akonadi support: `-DWITH_AKONADI=On` (requires `WITH_QT5`)
 
 ### Build instructions
 
