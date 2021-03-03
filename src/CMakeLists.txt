@@ -79,6 +79,7 @@ add_executable(twinkle-console
 	main.cpp
 	${twinkle_OBJS}
 )
+# add_library(twinkle-s SHARED ${twinkle_OBJS})
 
 set(twinkle_LIBS
 	-latomic
@@ -107,6 +108,10 @@ endif (WITH_QT5)
 
 target_link_libraries(twinkle-console ${twinkle_LIBS})
 
+
+# target_link_libraries(twinkle-s ${twinkle_LIBS})
+
 install(TARGETS twinkle-console DESTINATION bin)
+
 
 
